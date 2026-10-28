@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: set11-github-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: set11-app
+  template:
+    metadata:
+      labels:
+        app: set11-app
+    spec:
+      containers:
+      - name: web
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
