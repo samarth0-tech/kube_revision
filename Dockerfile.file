@@ -1,0 +1,2 @@
+FROM nginx:alpine
+RUN echo "<h1>Set 15 Complete CI/CD Web App via GitHub</h1>" > /usr/share/nginx/html/index.html
